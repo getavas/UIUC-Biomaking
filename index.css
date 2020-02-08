@@ -1,0 +1,282 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+ * {
+    font-family: 'Martel Sans', sans-serif;
+    outline: none;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #FFFFFF;
+    margin: 0px auto;
+  }
+  
+  #intro-block {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    background: linear-gradient(316deg, #02aab0, #00cdac, #7f7f7f);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+  }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+  #intro-block img {
+      width: 12%;
+      min-width: 100px;
+  }
+
+  #intro-button h1 {
+      margin-bottom: 20px;
+  }
+
+  #intro-block p {
+      margin-top: 0px;
+      margin-bottom: 40px;
+  }
+
+  #spacer {
+      height: 20%;
+  }
+
+  .intro-button {
+      font-size: 14px;
+      text-decoration: none;
+      color: darkslategray;
+      background-color: white;
+      padding: 10px 50px;
+      margin: 100px 10px;
+      width: 15%;
+      border-radius: 5px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      min-width: 150px;
+  }
+
+  .intro-button:hover {
+      text-decoration: none;
+      background-color: darkslategray;
+      color: white;
+  }
+
+  #fablab-block {
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      padding: 60px 0px;
+
+  }
+
+  #fablab-block img {
+      width: 60%;
+      min-width: 400px;
+  }
+
+  #fablab-video {
+      width: 100%;
+      margin-top: 50px;
+      margin-left: -2%;
+  }
+
+  @media screen and (max-width: 899px) {
+    #fablab-video p {
+        width: 80%;
+        float: none;
+        margin: 40px 10%;
+
+    }
+}
+
+  @media screen and (min-width: 900px) {
+    #fablab-video p {
+        width: 25%;
+        float: right;
+        margin-right: 15%;
+        margin-left: -15%;
+    }
+}
+
+.quote {
+    background-color: #EFEFEF;
+    text-align: center;
+    vertical-align: center;
+    padding: 50px 0;
+    margin-top: 300px;
+}
+
+.quote h3 {
+    margin: 0 20%;
+    color: darkslategray
+}
+
+.full-width-image {
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#lab {
+    background-image: url("/Users/gabrielt/Desktop/The Biomaking Space Website/images/lab.jpg");
+}
+
+#earth {
+    background-image: url("/Users/gabrielt/Desktop/The Biomaking Space Website/images/earth.jpg");
+}
+
+#lab-block {
+    text-align: center;
+    padding: 100px 10% 100px 5%;
+}
+
+@media screen and (max-width: 1199px) {
+    #lab-block p {
+        width: 70%;
+        float: none;
+        margin: 40px 15%;
+
+    }
+}
+
+  @media screen and (min-width: 1200px) {
+    #lab-block p {
+        width: 40%;
+        float: right;
+    }
+}
+
+
+/* The following is for all of the projects block section */
+
+#projects-block-intro {
+    width: 70%;
+    margin: 0 15%;
+}
+
+.project {
+    width: 50%;
+    min-width: 300px;
+    height: 300px;
+    margin: 100px 25%;
+}
+
+@media screen and (max-width: 1199px) {
+    #projects-block {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding: 60px 0;
+        margin-bottom: 200px;
+    }
+    
+    .project img {
+        display: none;
+    }
+
+    .project p {
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #projects-block {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding: 60px 30px;
+        margin-bottom: 200px;
+    }
+    
+    .project img {
+        float: left;
+        width: 40%;
+        height: 100%;
+        min-width: 200px;
+        margin-right: 40px;
+    }
+
+    .project p {
+        text-align: left;
+        font-size: 16px;
+        margin-right: 40px;
+    }
+}
+
+.project h3 {
+    background: #B1E2AE;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-style: bold;
+}
+
+/* This code is for all of the partners section */
+
+#partners-block {
+    background-color: #E5E9ED;
+    margin-top: 800px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+#partners-block-intro {
+    width: 50%;
+    margin: 0 25%;
+}
+
+.partner-logo img {
+    width: 200px;
+    margin: 30px;
+}
+
+#risd-logo, #taxon-logo {
+    width: 100px;
+}
+
+#forest-image {
+    width: 100%;
+}
+
+#google-form-block {
+    background-color: #14212D;
+    color: white;
+    text-align: center;
+    padding: 100px 27%;
+}
+
+#google-form-block a:hover {
+    background-color: white;
+}
+
+#google-form-block a, #google-form-block a:visited {
+    color: lightseagreen;
+}
+
+
